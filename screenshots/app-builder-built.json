@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Notts Ledger",
+      "hasCanvas": false,
+      "bodyTextLen": 3995,
+      "bodyTextHash": "a8fa504848bf9468eb53eee040a4fbd32483e89ed1e7c6446e5bd6e81b8d9ef0",
+      "bodyTextPrefix": "NOTTINGHAM & NOTTINGHAMSHIRE Notts Ledger County companies, a co",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Notts Ledger",
+      "hasCanvas": false,
+      "bodyTextLen": 3995,
+      "bodyTextHash": "a8fa504848bf9468eb53eee040a4fbd32483e89ed1e7c6446e5bd6e81b8d9ef0",
+      "bodyTextPrefix": "NOTTINGHAM & NOTTINGHAMSHIRE Notts Ledger County companies, a co",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}

@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Fraunces", ui-serif, Georgia, "Times New Roman", serif;
+  --color-paper: #f3efe6;
+  --color-paper-2: #e7e1d4;
+  --color-card: #faf7f2;
+  --color-ink: #1a2330;
+  --color-muted: #5c6570;
+  --color-line: #d4ccbe;
+  --color-teal: #0e7c74;
+  --color-teal-ink: #083f3b;
+  --color-on-teal: #f3efe6;
+  --color-rust: #a33b24;
+  --color-rust-soft: #f6e4dc;
+  --radius: 0.75rem;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    line-height: 1.5;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  input,
+  select,
+  textarea {
+    font: inherit;
+    color: inherit;
+    background: var(--color-card);
+    border: 1px solid var(--color-line);
+    border-radius: 0.5rem;
+  }
+
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible {
+    outline: 2px solid var(--color-teal);
+    outline-offset: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+@media print {
+  aside,
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+  }
+}
